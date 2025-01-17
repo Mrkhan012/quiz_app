@@ -6,6 +6,8 @@ import '../model/quiz_model.dart';
 import '../services/quiz_service.dart';
 
 class QuizController extends GetxController {
+    RxBool showLottie = false.obs;
+
   final QuizService _quizService = QuizService();
   var quiz = Rxn<QuizModel>();
   var currentQuestionIndex = 0.obs;
